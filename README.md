@@ -2,6 +2,9 @@
 
 Smart Research Assistant is an AI-powered tool that enables users to intelligently interact with research documents (PDF/TXT). It offers document summarization, question answering, logic-based challenges, and intelligent evaluation — all grounded directly in the document content.
 
+
+🎥 **Watch Demo Video:** [Click to watch on Google Drive]([https://drive.google.com/file/d/1Z2o0E9GzGgMY4eEgCIe6LsHe2K3JhZkp/view?usp=sharing](https://drive.google.com/file/d/1DlIA-g_D_VU46VqPh509Zy1FA8jCbPzx/view?usp=sharing))
+
 🔗 **Live Demo:** [https://smartassistant-charan.streamlit.app/](https://smartassistant-charan.streamlit.app/)  
 📦 **Tech Stack:** Python · Streamlit · Hugging Face Transformers · OpenRouter API · PDF/Text Parsing
 
