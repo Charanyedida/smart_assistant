@@ -1,30 +1,36 @@
-🧠 Smart Research Assistant
-Smart Research Assistant is an AI-powered tool that helps users interact intelligently with research documents (PDF/TXT). It enables summarization, Q&A, logic-based challenges, and answer evaluation — all grounded directly in the document content.
+# 🧠 Smart Research Assistant
 
-🔗 Live App: https://smartassistant-charan.streamlit.app/
-📦 Tech Stack: Python · Streamlit · Hugging Face Transformers · OpenRouter API · PDF/Text Parsing
+Smart Research Assistant is an AI-powered tool that enables users to intelligently interact with research documents (PDF/TXT). It offers document summarization, question answering, logic-based challenges, and intelligent evaluation — all grounded directly in the document content.
 
-✨ Features
-Feature	Description
-📄 Upload Docs	Upload any PDF or TXT file to analyze its content
-📝 Auto Summary	Generate concise summaries (≤150 words) using Transformer-based models
-💬 Ask Anything	Ask any question grounded in the document, with justification
-🧠 Challenge Me	Auto-generate 3 logic/comprehension questions + evaluate user answers
-☁️ Local + Cloud Mode	Toggle between free local models and powerful cloud APIs via OpenRouter
+🔗 **Live Demo:** [https://smartassistant-charan.streamlit.app/](https://smartassistant-charan.streamlit.app/)  
+📦 **Tech Stack:** Python · Streamlit · Hugging Face Transformers · OpenRouter API · PDF/Text Parsing
 
-🚀 Getting Started
-1. Clone the Repo
-bash
-Copy
-Edit
+---
+
+## ✨ Features
+
+| Feature               | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| 📄 Upload Docs        | Upload any PDF or TXT file to analyze its content                          |
+| 📝 Auto Summary       | Generate concise summaries (≤150 words) using Transformer-based models     |
+| 💬 Ask Anything       | Ask any question grounded in the document, with justification               |
+| 🧠 Challenge Me        | Auto-generate 3 logic/comprehension questions + evaluate user answers       |
+| ☁️ Local + Cloud Mode | Toggle between free local models and powerful cloud APIs via OpenRouter     |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
 git clone https://github.com/yourusername/smart-research-assistant.git
 cd smart-research-assistant
-2. Setup Virtual Environment
+2. Set Up Virtual Environment
 bash
 Copy
 Edit
 python -m venv smart_env
-source smart_env/bin/activate  # or smart_env\Scripts\activate on Windows
+source smart_env/bin/activate  # Windows: smart_env\Scripts\activate
 3. Install Requirements
 bash
 Copy
@@ -35,15 +41,14 @@ bash
 Copy
 Edit
 streamlit run app.py
-🧰 Configuration
-🔐 API Key (for Cloud Mode)
-To use OpenRouter AI models:
+🔐 API Key Configuration
+To enable cloud-based responses using OpenRouter:
 
 python
 Copy
 Edit
 api_key = "your_openrouter_api_key"
-For security, you may store it via environment variables or use Streamlit secrets in production.
+For better security, use .env files or Streamlit secrets in production.
 
 📁 Project Structure
 bash
@@ -51,30 +56,31 @@ Copy
 Edit
 smart-research-assistant/
 │
-├── app.py                        # Main Streamlit App
+├── app.py                        # Main Streamlit app
 ├── modules/
-│   ├── file_handler.py          # Extracts text from PDF/TXT
-│   ├── summarizer.py            # Summarizes content
-│   ├── qa_module.py             # Handles Q&A (local)
-│   ├── question_gen.py          # Question generation (local)
-│   └── evaluator.py             # Answer evaluation (local)
-├── assets/                      # Static resources, if needed
-├── requirements.txt             # Dependencies
+│   ├── file_handler.py          # Extracts text from uploaded documents
+│   ├── summarizer.py            # Summarizes extracted text
+│   ├── qa_module.py             # Local Q&A processing
+│   ├── question_gen.py          # Generates logic questions
+│   └── evaluator.py             # Evaluates user answers
+├── assets/                      # Optional: icons or media
+├── requirements.txt             # Dependency list
 └── README.md
-🧪 Future Enhancements
-🎙️ Whisper Integration for audio-based inputs
+🚧 Future Enhancements
+🔊 Whisper Integration (Audio → Text → Q&A)
 
-🧵 Session memory across interactions
+🧵 Context memory across sessions
 
-🎯 Feedback-based question refinement
+🎓 Difficulty-scaled challenge questions
 
-📊 Admin dashboard for document analytics
+📊 Interactive document analytics dashboard
 
 🙌 Credits
-Built by Charan Yedida using:
+Built by Charan Yedida with ❤️ using:
 
 Streamlit
 
 Hugging Face Transformers
 
 OpenRouter AI
+
