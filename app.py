@@ -810,7 +810,7 @@ def main():
     mode_choice = render_sidebar()
     
     # Initialize API client
-    api_key = "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"
+    api_key = os.getenv("API_KEY")
     api_client = OpenRouterAPI(api_key) if mode_choice == "☁️ Cloud (OpenRouter)" else None
     
     # Main content area
